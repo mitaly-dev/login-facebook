@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-page</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <section>
+      <div class="main">
+        <div class="input-field">
+          <input
+            id="email"
+            type="email"
+            placeholder="Type ( email@gmail.com )"
+          />
+        </div>
+        <div class="input-field">
+          <input
+            id="password"
+            type="password"
+            placeholder="Password ( minmun length 5 )"
+            disabled
+            minlength="5"
+          />
+        </div>
+        <div class="input-field">
+          <input
+            id="confirm-pass"
+            type="password"
+            placeholder="Confirm Password"
+            disabled
+            required
+            minlength="5"
+          />
+        </div>
+        <a id="log-in">log in</a>
+        <div class="new-pass">
+          <span>Forgotten passward?</span>
+          <button>Create New Account</button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+body {
+  background-color: lavender;
+}
+.main {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 35%;
+  box-shadow: 0px 2px 6px 0px #00000038;
+  background-color: #fff;
+  margin: auto;
+}
+input,
+#log-in,
+.new-pass button {
+  width: 92%;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+input::placeholder {
+  color: gray;
+  font-family: arial;
+  font-size: 16px;
+}
+#log-in {
+  background: linear-gradient(#01a0f4, #0349c2);
+  color: #fff;
+  width: 92%;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.5;
+}
+.new-pass {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.new-pass span {
+  font-size: 18px;
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  color: #2e98cb;
+  border-bottom: 1px solid #ddd;
+}
+.new-pass button {
+  background-color: green;
+  width: 60%;
+  margin: auto;
+  color: #fff;
+  font-size: 16px;
+}
+@media (min-width: 551px) and (max-width: 880px) {
+  .main {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main {
+    width: 90%;
+  }
+  input,
+  #log-in,
+  .new-pass button {
+    width: 82%;
+  }
+}
